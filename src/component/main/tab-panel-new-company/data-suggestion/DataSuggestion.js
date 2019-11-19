@@ -20,7 +20,7 @@ class DataSuggestion extends React.Component {
 	}
 
 	componentDidMount() {
-		if (this.props.autoload && this.state.query) {
+		if (this.state.query) {
 			this.fetchData();
 		}
 	};
@@ -47,7 +47,6 @@ class DataSuggestion extends React.Component {
 		this.setState({
 			inputFocused: false
 		});
-
 		if (this.state.suggestions.length === 0) {
 			this.fetchData();
 		}
@@ -92,15 +91,16 @@ class DataSuggestion extends React.Component {
 		}
 	}
 
-	render () {
+	render() {
 		return (
 			<>
 				<input
 					onChange={ this.onInputChange }
 					onFocus={ this.onInputFocus }
 					onBlur={ this.onInputBlur }
+					value={ this.state.query }
 					className="input-query"
-					type="text"
+					type="search"
 					placeholder="Введите название, ИНН или адрес организации"
 				/>
 				{ this.state.inputFocused &&

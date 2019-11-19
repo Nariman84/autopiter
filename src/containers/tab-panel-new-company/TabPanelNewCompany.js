@@ -19,7 +19,7 @@ class TabPanelNewCompany extends React.Component {
 		this.getRequestedCompany = this.getRequestedCompany.bind(this);
 	}
 
-	//получение запрашиваемой организации и установка ее в state
+	// получение запрашиваемой организации и установка ее в state
 	getRequestedCompany(value) {
 		this.setState({
 			requestedCompany: value,
@@ -27,11 +27,14 @@ class TabPanelNewCompany extends React.Component {
 		});
 	}
 
-	render () {
-		const { addCompany } = this.props;
+	render() {
+		const { addCompany, companies } = this.props;
 		const { isSelectCompany, requestedCompany } = this.state;
 		let tabPanelContent = isSelectCompany
-								? <RequestedCompany company={ requestedCompany } addCompany={ addCompany } />
+								? <RequestedCompany
+										company={ requestedCompany }
+										addCompany={ addCompany }
+										companies={ companies }/>
 								: <DefaultContent />
 		return (
 			<div className="tab-panel_new-company">

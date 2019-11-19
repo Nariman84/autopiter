@@ -1,0 +1,55 @@
+.saved-companies {
+	margin-bottom: 24px;
+	padding: 16px;
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #DFDFDF;
+	border-radius: 3px;
+}
+
+.less-info {
+	height: 80px;
+}
+
+.saved-companies__title {
+	margin-right: 8px;
+	font-size: 12px;
+	color: #777777;
+	line-height: 23px;
+}
+
+.saved-companies_detail {
+	font-size: 12px;
+	line-height: 23px;
+}
+
+.control {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.btn-delete {
+	background-color: transparent;
+}
+
+.btn-toggle {
+	white-space: nowrap;
+	background-color: transparent;
+}
+
+.btn-toggle__title {
+	border-bottom: 1px solid #777;
+    font-size: 10px;
+    line-height: 19px;
+    color: #777;
+}
+
+.btn-toggle__angle {
+	margin-left: 5px;
+}
+
+.angle-rotate {
+	transform: rotate(180deg);
+}

@@ -1,0 +1,72 @@
+.input-query {
+	position: absolute;
+    z-index: 2;
+	padding: 0 16px;
+	width: 100%;
+	height: 46px;
+	line-height: 26px;
+	border: 1px solid #E5E5E5;
+	border-radius: 3px;
+	font-family: Verdana;
+	font-size: 14px;
+	color: #777;
+}
+
+.input-query:focus {
+	outline-style: none;
+	border: 1px solid #FAE29F;
+}
+
+.input-query::-moz-placeholder {
+	color: #B9B9B9;
+}
+
+.input-query::-webkit-input-placeholder {
+	color: #B9B9B9;
+}
+
+.input-query::-ms-input-placeholder {
+	color: #B9B9B9;
+}
+
+.input-query::-ms-input-placeholder {
+	color: #B9B9B9;
+}
+
+.input-query::placeholder {
+	color: #B9B9B9;
+}
+
+.suggestions {
+	position: absolute;
+	top: 65px;
+	padding: 20px 0;
+	width: 100%;
+	z-index: 1;
+	background-color: #fff;
+	border: 1px solid #E5E5E5;
+	border-radius: 0px 0px 3px 3px;
+}
+
+.suggestion {
+	padding: 7px 20px;
+	cursor: pointer;
+}
+
+.suggestion:hover {
+	background-color: #F8F8F8;
+}
+
+.suggestion_title {
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 4px;
+}
+
+.suggestion_info {
+	font-size: 12px;
+	line-height: 17px;
+}
+.suggestion_info__inn {
+	margin-right: 20px;
+}

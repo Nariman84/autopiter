@@ -1,0 +1,41 @@
+.default-content {
+	margin-top: 90px;
+	display: flex;
+	align-items: center;
+	/*display: none;*/
+}
+
+.default-content_icon {
+	margin-right: 32px;
+	position: relative;
+	width: 68px;
+	height: 68px;
+	border: 4px solid #DFDFDF;
+	border-radius: 50%;
+}
+
+.default-content_icon:before,
+.default-content_icon:after {
+	content: '';
+	position: absolute;
+	height: 36px;
+	width: 0;
+	border: 2px solid #DFDFDF;
+}
+
+.default-content_icon:before {
+	top: 10px;
+	left: 28px;
+}
+
+.default-content_icon:after {
+	top: 10px;
+	left: 28px;
+	transform: rotate(90deg);
+}
+
+.default-content_text {
+	font-size: 14px;
+	line-height: 20px;
+	color: #777;
+}

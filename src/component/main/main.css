@@ -1,0 +1,13 @@
+.container {
+	margin: auto;
+	width: 736px;
+}
+
+.main {
+	margin-top: 56px;
+}
+
+.main-title {
+	margin-bottom: 32px;
+	font-size: 40px;
+}
